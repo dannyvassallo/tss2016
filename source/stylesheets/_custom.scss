@@ -1,9 +1,9 @@
-$contest-color: black;
 $tssblue: #676571;
+$contest-color: $tssblue;
 
 body{
   background-color: #efede8;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'berthold_akzidenz_grotesk_bRg';
   text-transform: uppercase;
   overflow-x: hidden;
 }
@@ -87,10 +87,16 @@ body{
  }
 
 #contest-form {
-    border: 10px solid #0097a7;
-    padding: 48px;
-    box-shadow: 0px 0px 0px 10px $contest-color;
-    // background-color: white;
+    h2{
+      color: $tssblue;
+    }
+    .btn{
+      background-color: $tssblue !important;
+    }
+    a{
+      text-decoration: underline;
+      color: $tssblue;
+    }
 }
 
 span.error{
@@ -106,8 +112,8 @@ span.error{
 
 input:not([type]):focus:not([readonly]),
 input:not([email]):focus:not([readonly]){
-  border-bottom: 1px solid #00bcd4;
-  box-shadow: 0 1px 0 0 #00bcd4;
+  border-bottom: 1px solid $tssblue;
+  box-shadow: 0 1px 0 0 $tssblue;
 }
 
 input:not([type]):focus:not([readonly])+label,
@@ -116,8 +122,8 @@ input:not([email]):focus:not([readonly])+label,{
 }
 
 input[type="checkbox"].filled-in:checked+label:after {
-  border: 2px solid #00bcd4;
-  background-color: #00bcd4;
+  border: 2px solid $tssblue;
+  background-color: $tssblue;
 }
 
 input, select, textarea{
@@ -222,6 +228,7 @@ footer{
   position: relative;
   margin-top: -7%;
   z-index: -1;
+  margin-bottom: -12%;
 }
 
 .video-col{
@@ -275,4 +282,19 @@ footer{
 .divider{
   height: 4px;
   background-color: $tssblue;
+}
+
+.cta{
+  margin: 2%;
+  h4{
+    margin: 0;
+  }
+}
+
+// .bundles{
+//   margin-top: -5%;
+// }
+
+.tss-blue{
+  background-color: $tssblue !important;
 }
