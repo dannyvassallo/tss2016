@@ -298,3 +298,27 @@ footer{
 .tss-blue{
   background-color: $tssblue !important;
 }
+
+
+@media #{$small-and-down} {
+  h4{
+    font-size: 18px;
+  }
+  .date{
+   font-size: 30px;
+  }
+  h5{
+    font-size: 16px;
+  }
+}
+@media #{$medium-and-down} {
+  h4{
+    font-size: 18px;
+  }
+  .date{
+   font-size: 30px;
+  }
+  h5{
+    font-size: 16px;
+  }
+}
