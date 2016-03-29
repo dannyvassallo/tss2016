@@ -1,10 +1,9 @@
+$tssblue: #676571;
+$contest-color: $tssblue;
 
 body{
-  background-image: url('https://s3.amazonaws.com/myfangate.com/fightforsomething/grunge.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #efede8;
+  font-family: 'berthold_akzidenz_grotesk_bRg';
   text-transform: uppercase;
   overflow-x: hidden;
 }
@@ -44,54 +43,60 @@ body{
   display: inline;
 }
 
-.smoke{
-  background: url('https://s3.amazonaws.com/myfangate.com/fightforsomething/smoke.png') no-repeat center center;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  z-index: -1;
-}
+// .smoke{
+//   background: url('https://s3.amazonaws.com/myfangate.com/fightforsomething/smoke.png') no-repeat center center;
+//   background-size: cover;
+//   background-position: center;
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   height: 100%;
+//   z-index: -1;
+// }
 
 // FORMS
 
 /* label color */
  .input-field label {
-   color: #fff;
+   color: $contest-color;
  }
  /* label focus color */
  .input-field input[type=text]:focus + label {
-   color: #fff;
+   color: $contest-color;
  }
  /* label underline focus color */
  .input-field input[type=text]:focus {
-   border-bottom: 1px solid #fff;
-   box-shadow: 0 1px 0 0 #fff;
+   border-bottom: 1px solid $contest-color;
+   box-shadow: 0 1px 0 0 $contest-color;
  }
  /* valid color */
  .input-field input[type=text].valid {
-   border-bottom: 1px solid #fff;
-   box-shadow: 0 1px 0 0 #fff;
+   border-bottom: 1px solid $contest-color;
+   box-shadow: 0 1px 0 0 $contest-color;
  }
  /* invalid color */
  .input-field input[type=text].invalid {
-   border-bottom: 1px solid #fff;
-   box-shadow: 0 1px 0 0 #fff;
+   border-bottom: 1px solid $contest-color;
+   box-shadow: 0 1px 0 0 $contest-color;
  }
  /* icon prefix focus color */
  .input-field .prefix.active {
-   color: #fff;
+   color: $contest-color;
  }
 
 #contest-form {
-    border: 10px solid #0097a7;
-    padding: 48px;
-    box-shadow: 0px 0px 0px 10px #fff;
-    // background-color: white;
+    h2{
+      color: $tssblue;
+    }
+    .btn{
+      background-color: $tssblue !important;
+    }
+    a{
+      text-decoration: underline;
+      color: $tssblue;
+    }
 }
 
 span.error{
@@ -107,26 +112,26 @@ span.error{
 
 input:not([type]):focus:not([readonly]),
 input:not([email]):focus:not([readonly]){
-  border-bottom: 1px solid #00bcd4;
-  box-shadow: 0 1px 0 0 #00bcd4;
+  border-bottom: 1px solid $tssblue;
+  box-shadow: 0 1px 0 0 $tssblue;
 }
 
 input:not([type]):focus:not([readonly])+label,
 input:not([email]):focus:not([readonly])+label,{
-  color: #00bcd4;
+  color: $contest-color;
 }
 
 input[type="checkbox"].filled-in:checked+label:after {
-  border: 2px solid #00bcd4;
-  background-color: #00bcd4;
+  border: 2px solid $tssblue;
+  background-color: $tssblue;
 }
 
 input, select, textarea{
-    color: #fff;
+    color: $contest-color;
 }
 
 textarea:focus, input:focus {
-    color: #fff;
+    color: $contest-color;
 }
 
 // .header-img,
@@ -195,4 +200,142 @@ footer{
 
 .tix:nth-child(odd){
   margin-right: 8px;
+}
+
+.gradient{
+  // background: rgb(222,107,109); /* Old browsers */
+  // background: -moz-linear-gradient(45deg,  rgba(222,107,109,1) 0%, rgba(103,101,113,1) 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(45deg,  rgba(222,107,109,1) 0%,rgba(103,101,113,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  rgba(222,107,109,1) 0%,rgba(103,101,113,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de6b6d', endColorstr='#676571',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-fade{
+  background: -moz-linear-gradient(top,  rgba(239,237,232,0) 0%, rgba(239,237,232,1) 60%, rgba(239,237,232,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(239,237,232,0) 0%,rgba(239,237,232,1) 60%,rgba(239,237,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(239,237,232,0) 0%,rgba(239,237,232,1) 60%,rgba(239,237,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00efede8', endColorstr='#efede8',GradientType=0 ); /* IE6-9 */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.gradient-container{
+  position: relative;
+  margin-top: -7%;
+  z-index: -1;
+  margin-bottom: -12%;
+}
+
+.video-col{
+  margin-top: -60%;
+  h5{
+    z-index: 10;
+    position: relative;
+  }
+}
+
+.large-mini{
+  border: solid $tssblue 4px;
+}
+
+.album-mini{
+  position: relative;
+  z-index: 10;
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg); /* Chrome, Safari, Opera */
+  transform: rotate(-5deg);
+}
+
+.video-title{
+  background-color: #efede8;
+  position: relative;
+  z-index: 10;
+  border: 5px solid #5c6371;
+  h5{
+    margin: 0;
+    color: #5c6371;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
+
+.date{
+  margin: 0;
+}
+
+.date-wrap{
+  height: 100%;
+}
+
+.small-band{
+  margin-bottom: -65%;
+  margin-top: -10%;
+  z-index: -20;
+  position: relative;
+}
+
+.divider{
+  height: 4px;
+  background-color: $tssblue;
+}
+
+.cta{
+  margin: 2%;
+  h4{
+    margin: 0;
+  }
+}
+
+// .bundles{
+//   margin-top: -5%;
+// }
+
+.tss-blue{
+  background-color: $tssblue !important;
+}
+
+
+@media #{$small-and-down} {
+  h4{
+    font-size: 18px;
+  }
+  .date{
+   font-size: 30px;
+  }
+  h5{
+    font-size: 16px;
+  }
+}
+@media #{$medium-and-down} {
+  h4{
+    font-size: 18px;
+  }
+  .date{
+   font-size: 30px;
+  }
+  h5{
+    font-size: 16px;
+  }
+}
+
+.parallax-container{
+  height: inherit;
+  .parallax{
+    opacity: .3;
+  }
+}
+
+footer{
+  margin-top: 0 !important;
+}
+
+.cta{
+  h4{
+    color: #676571;
+  }
 }

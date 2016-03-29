@@ -130,3 +130,30 @@ $('input').focus(function(){
 //   {selector: '#tour-dates', offset: 400, callback: 'datesShow();'}
 // ];
 // Materialize.scrollFire(options);
+
+$(function(){
+  $('.parallax').parallax();
+});
+
+// $(function(){
+//   var videoTitle = $('.video-title');
+//   var margin = '-'+ ((videoTitle.height())/2) +'px';
+//   videoTitle.css({'margin-bottom': margin});
+// });
+
+
+function resizeDate(){
+  var alH = $('.album-mini').height();
+  $('.date-wrap').height(alH);
+}
+
+$(function(){
+  resizeDate();
+  $('.album-mini').on('load', function(){
+    resizeDate();
+  });
+});
+
+$(window).resize(function(){
+  resizeDate();
+});

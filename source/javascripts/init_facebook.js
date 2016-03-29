@@ -5,7 +5,7 @@
   //        Facebook API HOOKS       //
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '1558392051152227',
+      appId      : '860239634105258',
       xfbml      : true,
       version    : 'v2.5'
     });
@@ -34,11 +34,11 @@
     {
       // SHARE INFO
       method: 'feed',
-      name: 'The Fight For Something Tour', // name of the product or content you want to share
-      link: 'http://thefightforsomethingtour.com', // link back to the product or content you are sharing
-      picture: 'https://s3.amazonaws.com/myfangate.com/fightforsomething/shareimage.jpg', // path to an image you would like to share with this content
-      caption: 'http://thefightforsomethingtour.com', // caption
-      description: 'ENTER TO WIN TICKETS TO A SHOW NEAR YOU!' // description of your product or content
+      name: 'The Summer Set | ENTER TO WIN', // name of the product or content you want to share
+      link: 'http://thesummersetband.com/jeanjacket', // link back to the product or content you are sharing
+      picture: 'https://s3.amazonaws.com/myfangate.com/tss2016/band-promo.jpg', // path to an image you would like to share with this content
+      caption: 'thesummersetband.com/jeanjacket', // caption
+      description: 'Share the new single \"Jean Jacket\" from The Summer Set and win a signed jean jacket from the band + a UE BOOM Megaboom speaker!' // description of your product or content
     },
     function(response) {
       if (response && response.post_id) {
