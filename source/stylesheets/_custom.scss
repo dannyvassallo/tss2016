@@ -28,6 +28,16 @@ body{
   margin-top: -25%;
 }
 
+.mini-desk{
+  z-index: 10;
+  position: relative;
+}
+
+.promo-desk{
+  z-index: 9;
+  position: relative;
+}
+
 .collection,
 .collection-header,
 .collection-item{
@@ -256,6 +266,7 @@ footer{
   position: relative;
   z-index: 10;
   border: 5px solid #5c6371;
+  margin-bottom: 2%;
   h5{
     margin: 0;
     color: #5c6371;
@@ -299,7 +310,6 @@ footer{
   background-color: $tssblue !important;
 }
 
-
 @media #{$small-and-down} {
   h4{
     font-size: 18px;
@@ -308,10 +318,13 @@ footer{
    font-size: 30px;
   }
   h5{
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 @media #{$medium-and-down} {
+  .video-title{
+    margin-bottom: 20%;
+  }
   h4{
     font-size: 18px;
   }
@@ -325,13 +338,16 @@ footer{
 
 .parallax-container{
   height: inherit;
+  z-index: 9999;
   .parallax{
     opacity: .3;
   }
+  margin-top: 7%;
+  margin-bottom: 7%;
 }
 
 footer{
-  margin-top: 0 !important;
+  margin-top: -7% !important;
 }
 
 .cta{
